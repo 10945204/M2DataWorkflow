@@ -85,8 +85,9 @@ def main():
     # We reverse it for plotting so Best is at top (y-axis max).
     plot_data = stats.iloc[::-1]
 
-    bars = plt.barh(plot_data['Course'], plot_data['Average Rating'], color='skyblue')
+    bars = plt.barh(plot_data['Course'], plot_data['Average Rating'], color='#185C33')
     plt.xlabel('Average Rating (1 = Best, 8 = Worst)')
+    plt.ylabel('MAcc CORE Courses')
     plt.title('Course Ranking by Student Preference')
     plt.grid(axis='x', linestyle='--', alpha=0.7)
 
